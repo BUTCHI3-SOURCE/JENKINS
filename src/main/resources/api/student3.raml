@@ -1,0 +1,17 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/0d0f5719-8e53-4bbf-adc8-1035f1a4b984/ # 
+title: STUDENT3
+/getStudent:
+  get:
+    queryParameters:
+      id: number
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "NUM":"3",
+                "NAME": "ROHIT",
+                "PHONE":"22222"
+              }  
