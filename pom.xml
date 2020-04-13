@@ -25,7 +25,27 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
+				
+				<cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <muleVersion>${app.runtime}</muleVersion>
+      <username>BUTCHI534</username>
+      <password>Naidu@33</password>
+      <applicationName>${cloudhub.application.name}</applicationName>
+      <environment>Sandbox</environment>
+      <workerType>Micro</workerType>
+      <workers>1</workers>
+      <objectStoreV2>true</objectStoreV2>
+      <properties>
+        <key>value</key>
+      </properties>
+    </cloudHubDeployment>
+				
+				
+				
+				
+				<classifier>mule-application</classifier>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
