@@ -1,14 +1,14 @@
 pipeline {
     agent any 
-    stages {
+    stages{
         stage('Build Appication') { 
-            steps {
+            steps{
                 bat 'mvn clean install' 
             }
         }
         
        stage('Deploy Mule  Appication into cloud') { 
-            steps {
+            steps{
                 bat 'mvn package deploy -DmuleDeploy' 
             }
         }
