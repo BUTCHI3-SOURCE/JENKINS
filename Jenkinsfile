@@ -3,13 +3,13 @@ pipeline {
     stages{
         stage('Build Appication') { 
             steps{
-                bat 'mvn clean install' 
+                bat "mvn clean install" 
             }
         }
         
        stage('Deploy Mule  Appication into cloud') { 
             steps{
-                bat 'mvn package deploy -DmuleDeploy' 
+                bat "mvn package deploy -DmuleDeploy" 
             }
         }
       }
