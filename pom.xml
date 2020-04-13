@@ -31,7 +31,7 @@
       <muleVersion>${app.runtime}</muleVersion>
       <username>BUTCHI534</username>
       <password>Naidu@33</password>
-      <applicationName>${cloudhub.application.name}</applicationName>
+      <applicationName>MYCLOUD</applicationName>
       <environment>Sandbox</environment>
       <workerType>Micro</workerType>
       <workers>1</workers>
